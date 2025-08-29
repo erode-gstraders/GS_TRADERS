@@ -1,109 +1,286 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-bs-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nutify – Products</title>
+  <title>GS Traders | Products</title>
+  <meta name="description"
+    content="GS Traders offers premium dry fruits, nuts, and spices. Retail and wholesale of cashews, almonds, pistachios, raisins, dates, black pepper, and cardamom. Trusted quality since 1990.">
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/gsl.png" type="image/png">
 
-  <!-- Poppins Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-  <!-- AOS Animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- CSS Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="GS Traders | Products">
+  <meta property="og:description"
+    content="Retail and wholesale of premium dry fruits, nuts, and spices. Trusted quality since 1990.">
+  <meta property="og:image" content="assets/images/gsl.png">
+  <meta property="og:url" content="https://gstraders.mini.site/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GS Traders | Products">
+  <meta name="twitter:description"
+    content="Retail and wholesale of premium dry fruits, nuts, and spices. Trusted quality since 1990.">
+  <meta name="twitter:image" content="assets/images/gsl.png">
+
+  <!-- Social Media Links (optional usage in head for reference) -->
+  <meta name="twitter:site" content="@GS_TRADERS_">
+  <meta name="instagram" content="https://www.instagram.com/gs_traders_erode">
+  <meta name="facebook" content="https://www.facebook.com/profile.php?id=61579177513808&rdid=6mcbnh9eTxv6BLPH#">
+  <meta name="whatsapp" content="https://wa.me/919445944587">
+  <meta name="x-site" content="https://x.com/GS_TRADERS_">
 </head>
-<body class="bg-light text-dark">
 
-  <!-- Navbar will load here -->
-  <div id="navbar"></div>
+<body>
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm sticky-top custom-navbar">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand d-flex align-items-left" href="index.html">
+        <img src="assets/images/gsl.png" alt="GS Traders Logo" height="45">
+        <span class="ms-2 fw-bold brand-text">GS Traders</span>
+      </a>
 
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- Dark Mode Toggle -->
+        <button class="btn btn-outline-light ms-lg-3" id="darkModeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Products Section - Responsive Apple Style -->
   <!-- Products -->
-  <main class="mt-5 pt-5">
+  <main class="mt-4 pt-3">
 
-    <!-- Product Item -->
-    <section class="d-flex align-items-center justify-content-center vh-100 text-center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6" data-aos="fade-up">
-            <div class="card shadow-lg border-0 rounded-4">
-              <img src="assets/images/cashew.jpeg" alt="Cashews" class="card-img-top rounded-top-4">
-              <div class="card-body">
-                <h1 class="fw-bold display-6">Cashews</h1>
-                <p class="lead">The King of Nuts – Sourced from Pure Farms</p>
-                <a href="https://wa.me/your-number" class="btn btn-dark btn-lg mt-2">Buy on WhatsApp</a>
-              </div>
-            </div>
+    <!-- Healthy Nuts -->
+    <section class="container py-5">
+      <h2 class="text-center fw-bold mb-5 display-6">Healthy Nuts</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/cashews/1.jpeg" alt="Cashews" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Cashews</h3>
+            <p class="text-muted mb-3">The King of Nuts – Sourced from Pure Farms</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/cashew (2).jpeg" alt="Almonds" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Almonds</h3>
+            <p class="text-muted mb-3">Energy in Every Bite</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/cashew (3).jpeg" alt="Pistachios" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Pistachios</h3>
+            <p class="text-muted mb-3">Crack the Goodness – Premium Quality</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Product Item -->
-    <section class="d-flex align-items-center justify-content-center vh-100 text-center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6" data-aos="fade-up">
-            <div class="card shadow-lg border-0 rounded-4">
-              <img src="assets/images/cashew (2).jpeg" alt="Almonds" class="card-img-top rounded-top-4">
-              <div class="card-body">
-                <h1 class="fw-bold display-6">Almonds</h1>
-                <p class="lead">Energy in Every Bite</p>
-                <a href="https://wa.me/your-number" class="btn btn-dark btn-lg mt-2">Buy on WhatsApp</a>
-              </div>
-            </div>
+    <!-- Dry Fruits -->
+    <section class="container py-5">
+      <h2 class="text-center fw-bold mb-5 display-6">Dry Fruits</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/dryfruits/1.jpeg" alt="Raisins" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Raisins</h3>
+            <p class="text-muted mb-3">Sweet and Healthy</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/dryfruits/2.jpeg" alt="Walnuts" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Walnuts</h3>
+            <p class="text-muted mb-3">Heart-Healthy and Crunchy</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/dryfruits/3.jpeg" alt="Cashews Mix" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Mixed Dry Fruits</h3>
+            <p class="text-muted mb-3">Assorted Premium Nuts</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Product Item -->
-    <section class="d-flex align-items-center justify-content-center vh-100 text-center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6" data-aos="fade-up">
-            <div class="card shadow-lg border-0 rounded-4">
-              <img src="assets/images/cashew (3).jpeg" alt="Pistachios" class="card-img-top rounded-top-4">
-              <div class="card-body">
-                <h1 class="fw-bold display-6">Pistachios</h1>
-                <p class="lead">Crack the Goodness – Premium Quality</p>
-                <a href="https://wa.me/your-number" class="btn btn-dark btn-lg mt-2">Buy on WhatsApp</a>
-              </div>
-            </div>
+    <!-- Spices -->
+    <section class="container py-5">
+      <h2 class="text-center fw-bold mb-5 display-6">Spices</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/spices/1.jpeg" alt="Black Pepper" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Black Pepper</h3>
+            <p class="text-muted mb-3">Fresh and Aromatic</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/spices/2.jpeg" alt="Cardamom" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Cardamom</h3>
+            <p class="text-muted mb-3">Fragrant and Pure</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/spices/3.jpeg" alt="Cloves" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Cloves</h3>
+            <p class="text-muted mb-3">Intense Flavor & Aroma</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Add more product sections in same structure -->
+    <!-- Dates -->
+    <section class="container py-5">
+      <h2 class="text-center fw-bold mb-5 display-6">Dates</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/dates/1.jpeg" alt="Dates" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Dates</h3>
+            <p class="text-muted mb-3">Naturally Sweet and Nutritious</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/dates/2.jpeg" alt="Medjool Dates" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Medjool Dates</h3>
+            <p class="text-muted mb-3">Premium Sweetness</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card text-center p-4 rounded-4 shadow-sm h-100">
+            <img src="assets/images/dates/3.jpeg" alt="Ajwa Dates" class="img-fluid rounded-4 mb-3">
+            <h3 class="fw-semibold mb-2">Ajwa Dates</h3>
+            <p class="text-muted mb-3">Rich in Nutrients</p>
+            <a href="https://wa.me/919445944587" class="btn btn-dark btn-lg">Buy on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <!-- Footer will load here -->
-  <div id="footer"></div>
+  <!-- Footer (same as before) -->
+  <footer class="py-5 mt-5 bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">GS Traders</h5>
+          <p class="small">
+            Since 1990, we’ve been curating nature’s finest
+            <span class="fw-semibold">dry fruits, nuts & spices</span> —
+            blending tradition, purity, and excellence for families and businesses worldwide.
+          </p>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-semibold">Explore</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+            <li><a href="products.html" class="text-light text-decoration-none">Products</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-semibold">Connect</h6>
+          <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i> 550, Netaji Road, Erode, Tamil Nadu, India
+          </p>
+          <p class="small mb-1"><i class="fas fa-envelope me-2"></i> care.gstraders@gmail.com</p>
+          <p class="small"><i class="fas fa-phone me-2"></i> +91 9445944587</p>
+          <div class="mt-2">
+            <a href="https://instagram.com" target="_blank" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-light"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-semibold">Stay Updated</h6>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control form-control-sm" placeholder="Your email">
+              <button class="btn btn-warning btn-sm">Subscribe</button>
+            </div>
+            <small class="d-block mt-2 text-secondary">Get the latest offers & product updates.</small>
+          </form>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center">
+        <p class="mb-0 small">&copy; 2025 <strong>GS Traders</strong>. Crafted with trust. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({ once: true, duration: 700 });
 
-    // Load navbar and footer dynamically
-    fetch("navbar.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("navbar").innerHTML = data);
-
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("footer").innerHTML = data);
+    const toggleBtn = document.getElementById("darkModeToggle");
+    toggleBtn.addEventListener("click", () => {
+      let htmlTag = document.documentElement;
+      let current = htmlTag.getAttribute("data-bs-theme");
+      htmlTag.setAttribute("data-bs-theme", current === "dark" ? "light" : "dark");
+      toggleBtn.innerHTML = current === "dark" ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+    });
   </script>
-
-  <!-- Custom JS -->
-  <script src="js/main.js"></script>
-
 </body>
+
 </html>
