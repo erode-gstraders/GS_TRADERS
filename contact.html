@@ -208,19 +208,28 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="card shadow border-0 rounded-4 p-4">
-            <form>
+            <form
+              action="https://docs.google.com/forms/d/e/1FAIpQLScRhqOpDivWOPKNjmI6t7rxhUhNnYyDHcIKw7sa1SBST3pNUQ/formResponse"
+              method="POST" target="_blank">
               <div class="mb-3">
                 <label for="name" class="form-label">Your Name</label>
-                <input type="text" id="name" class="form-control rounded-3" placeholder="Enter your name">
+                <input type="text" id="name" name="entry.1511316705" class="form-control rounded-3"
+                  placeholder="Enter your name" required>
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Your Email / Phone</label>
-                <input type="text" id="email" class="form-control rounded-3" placeholder="Enter your email or phone">
+                <label for="phone" class="form-label">Your Phone</label>
+                <input type="tel" id="phone" name="entry.1803656217" class="form-control rounded-3"
+                  placeholder="Enter your phone number" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="entry.828202094" class="form-control rounded-3"
+                  placeholder="Enter your email address" required>
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Your Message</label>
-                <textarea id="message" class="form-control rounded-3" rows="4"
-                  placeholder="Type your message"></textarea>
+                <textarea id="message" name="entry.1288220162" class="form-control rounded-3" rows="4"
+                  placeholder="Type your message" required></textarea>
               </div>
               <div class="text-center">
                 <button type="submit" class="btn btn-success rounded-pill px-4">
@@ -232,6 +241,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Contact Info + Map -->
     <section class="py-5 bg-light" data-theme="light">
